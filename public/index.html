@@ -5,36 +5,30 @@
     <title>TheKachi</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
     <body>  
-        <div class="wrapper">
-            <nav class="navbar">
-                <div class="container">
-                    <h1 class="logo">kar-chee</h1>
-                    <ul class="nav">
-                        <li><a href="#about">About</a></li>
-
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        
-                    </ul>
-                </div>
-            </nav>
+        <nav class="nav" id="navbar">
+            <h1 class="logo">kar-chee</h1>
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#gallery">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     
-                <section class="hero"> 
-                    <div class="container">
-                        <div>
-                            <h5 style="color: rgb(100, 255, 218)"> Hi, my name is</h5>
-                            <h1>Kachi.</h1>
-                            <h1 style="color:rgb(136, 146, 176)">I build things for the web.</h1>
-                            <p> I'm a front end web developer based in Lagos, Nigeria<br>specializizing in building (and occassionally designing)<br>exceptional, high-quality websites and applications.</p>
-                            <a href="https://drive.google.com/open?id=1Y3VT9d4_pFkrj8ZcxONNa_UYYpXvo6il" class="btn">View My Resume</a>           
-                    </div>
-                </div>                            
-                </section>
+        <section class="hero">           
+            <h5>  Hi, my name is</h5>
+            <h1>Kachi.</h1>
+            <h1 style="color:rgb(136, 146, 176)">I build things for the web.</h1>
+            <p> I'm a front end web developer based in Lagos, Nigeria <br> specializing in building (and occassionally designing) exceptional, <br> high-quality websites and applications.</p>
+            <a href="https://drive.google.com/open?id=1Y3VT9d4_pFkrj8ZcxONNa_UYYpXvo6il" class="btn">View My Resume</a>                                 
+        </section>
             
              <section class="about-page" id="about">
                 <img src="img/MYPICTURE.jpg">
@@ -133,13 +127,30 @@
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
     </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-header">
+            <h2>Let's work together!</h2>
+            <p>How do you like your coffee?</p>
+        </div>
+        <div class="contact-links">
+            <a id="profile-link" href="https://github.com/TheKachi" target="_blank" class="contact-btn contact-details"><i
+                    class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/thekachi" target="_blank" class="contact-btn contact-details"><i class="fab fa-linkedin"></i>
+                LinkedIn</a>
+            <a href="https://twitter.com/btflblackchild" target="_blank" class="contact-btn contact-details"><i class="fab fa-twitter"></i>
+                Twitter</a>
+            <a href="mailto:nzebenflorence@gmail.com" class="contact-btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+            <a href="tel:2348147124524" class="contact-btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
+        </div>
+    </section>
         <footer>
             <!-- <ul  class="links"> 
             <li><a href="#" class="fa fa-twitter"></a></li>
             <li><a href="#" class="fa fa-github"></a></li>
             <li><a href="#" class="fa fa-linkedin"></a></li>
             </ul> -->
-            <p style="text-align: center">❤ Kachi &copy; 2019.</p>
+            <p style="text-align: center">Built by Kachi &copy; 2019.</p>
         </footer>
 
 </div> 
