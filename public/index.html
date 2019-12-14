@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,156 +7,169 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="queries.css"> --> 
 </head>
-    <body>  
-        <nav class="nav" id="navbar">
-            <h1 class="logo">kar-chee</h1>
-            <ul class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#gallery">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+  
+<body>  
+    <header class="header">      
+        <nav class="navbar"> 
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars fa-custom fa-2x"></i>
+            </span>
+            <a href="#" class="logo">K</a> 
+            <ul class="menu" id="js-menu">
+                <li class="item x"><a href="#about"><span>01. </span>About</a></li>
+                <li class="item x"><a href="#gallery"><span>02. </span>Projects</a></li>
+                <li class="item x"><a href="#contact"><span>03. </span>Contact</a></li>
+                <li class="item button"><a href="#">BLOG</a></li>
             </ul>
         </nav>
+        
+    </header>
     
-        <section class="hero">           
-            <h5>  Hi, my name is</h5>
-            <h1>Kachi.</h1>
-            <h1 style="color:rgb(136, 146, 176)">I build things for the web.</h1>
-            <p> I'm a front end web developer based in Lagos, Nigeria <br> specializing in building (and occassionally designing) exceptional, <br> high-quality websites and applications.</p>
-            <a href="https://drive.google.com/open?id=1Y3VT9d4_pFkrj8ZcxONNa_UYYpXvo6il" class="btn">View My Resume</a>                                 
+
+    <main class="content-container">
+        <section class="hero">                     
+            <div class="hero-content">
+                <h5> Hi, my name is</h5>
+                <h1>Kachi.</h1>
+                <h1 style="color:rgb(136, 146, 176)">I build things for the web.</h1>
+                <p> I'm a front end web developer based in Lagos, Nigeria <br> specializing in building (and occassionally designing)
+                    exceptional, <br> high-quality websites and applications.</p>
+                <a href="https://drive.google.com/open?id=1Y3VT9d4_pFkrj8ZcxONNa_UYYpXvo6il" class="btn">View My Resume</a>
+            </div> 
         </section>
-            
-             <section class="about-page" id="about">
-                <img src="img/MYPICTURE.jpg">
-                <div>
-                    <h3 style="color: white">About Me</h3>
-                    <p>Hello! I'm Kachi, a front end software engineering intern based in Lagos, Nigeria who enjoys building things that live on the internet. 
-    I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.
-    Shortly after graduating, I joined the engineering team at Bincom where I work on a wide variety of interesting and meaningful projects on a daily basis. 
-    Here are a few technologies I've been working with recently:   
-                    </p>
-                    <ul style="color: rgb(136, 146, 176)">
-                        <li>JavaScript (ES6+)</li>
-                        <li>HTML & CSS</li>
-                        <li>React</li>
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>PostgreSQL</li>
-                    </ul>
-                    </div>                          
-            </section>
-            <h1 style="margin-left: 2em">Where I've Worked</h1>
-            <section class="experience-page" id="experience">
+          
+        <section class="about-page" id="about">
+               <h2 class="about-title"><span>01.</span> About me</h2>
                 
-                <div>
-                    <div>         
-                    <h4>Intern <span style="color: rgb(100, 255, 218)">@ Hotels.Ng</span></h4>
-                    <h5>September 2019</h5>
-                    <ul>
-                        <li>Designed User Interfaces for client companies</li>
-                        <li>Worked in teams to develop code and host website pages from scratch</li>
-                     </ul>
-                </div></div>
-                <div><div>
-                    <h4>Software Engineering Intern <span style="color: rgb(100, 255, 218)">@ CoralPay</span></h4>
-                    <h5>July-December 2018</h5>
-                    <ul>
-                        <li>Worked in a team of experienced fintech software developers to deliver payment solutions</li>
-                        <li>Worked with the network team to maintain and manage server operations</li>
-                    </ul>
-                </div></div>
-                <div>
-                                    <div>
-                                        <h4>Volunteer <span style="color: rgb(100, 255, 218)">@ Girls' Coding</span></h4>
-                                        <h5>May-September 2017</h5>
-                                        <ul>
-                                            <li>Trained underprivileged young girls of ages 9-16 years on Scratch, HTML and CSS</li>
-                                            <li>Hosted monthly seminars on Science, Technology, Engineering and Mathematics (S.T.E.M).</li>
-                                            <li>Facilitated web design weekend and summer classes for underprivileged girls within ages 9-16 years</li>
-                                            <li></li>
-                                        </ul>
-                                    </div>
+                <div class="about-text">
+                    <div style="margin-bottom: 1em;">
+                        <p>Hello! I'm Kachi, a front end software engineering intern based in Lagos, Nigeria who enjoys building things that live on the internet. 
+                            I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.
+                        </p>
+                    </div> 
+                    <div style="margin-bottom: 1em;">
+                        <p>
+                        Shortly after graduating, I joined the engineering team at Bincom where I work on a wide variety of interesting and meaningful projects on a daily basis. 
+                        </p>
+                    </div>
+                    <div>
+                        <p>Here are a few technologies I've been working with recently:   
+                        </p>
+                    </div>
+                    <div>
+                        <ul style="color: rgb(136, 146, 176)" class="about-list">
+                            <li>JavaScript (ES6+)</li>
+                            <li>HTML & CSS</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+                </div>     
+                 <img class="about-image" src="img/MYPICTURE.jpg"> 
+            </section>
+
+        <!-- <section id="gallery">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img/MYPICTURE.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
                 </div>
-                                    <div>
-                                        <div>
-                                        <h4>HTML facilitator <span style="color: rgb(100, 255, 218)">@ Kids That Code Nigeria</span></h4>
-                                        <h5>July 2016-Present</h5>
-                                        <ul>
-                                            <li>Train children between the ages of 6-16 years on Scratch, Wordpress, HTML and CSS</li>
-                                            <li>Facilitate paid summer classes on web designing for children within the ages of 6-16 years</li>
-                                            <li>Volunteer at organization's boot camps</li>
-                                        </ul>
-                                    </div>
-                                </div>
-               
- </section>
-<section id="gallery">
-    <div class="slideshow-container">
-    
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="img/MYPICTURE.jpg" style="width:100%">
-            <div class="text">Caption Text</div>
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img/download.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img/MYPICTURE.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
-        </div>
-    
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-    </section>
 
-    <section class="contact" id="contact">
-        <div class="contact-header">
-            <h2>Let's work together!</h2>
-            <p>How do you like your coffee?</p>
-        </div>
-        <div class="contact-links">
-            <a id="profile-link" href="https://github.com/TheKachi" target="_blank" class="contact-btn contact-details"><i
-                    class="fab fa-github"></i> GitHub</a>
-            <a href="https://linkedin.com/in/thekachi" target="_blank" class="contact-btn contact-details"><i class="fab fa-linkedin"></i>
-                LinkedIn</a>
-            <a href="https://twitter.com/btflblackchild" target="_blank" class="contact-btn contact-details"><i class="fab fa-twitter"></i>
-                Twitter</a>
-            <a href="mailto:nzebenflorence@gmail.com" class="contact-btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
-            <a href="tel:2348147124524" class="contact-btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
-        </div>
-    </section>
-        <footer>
-            <!-- <ul  class="links"> 
-            <li><a href="#" class="fa fa-twitter"></a></li>
-            <li><a href="#" class="fa fa-github"></a></li>
-            <li><a href="#" class="fa fa-linkedin"></a></li>
-            </ul> -->
-            <p style="text-align: center">Built by Kachi &copy; 2019.</p>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img/download.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="img/MYPICTURE.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section> -->
+
+        <section class="contact" id="contact">
+            <div class="contact-header">
+                <h2>Let's work together!</h2>
+                <p>How do you like your coffee?</p>
+            </div>
+            <div class="contact-links">
+                <a id="profile-link" href="https://github.com/TheKachi" target="_blank" class="contact-btn contact-details"><i
+                        class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/in/thekachi" target="_blank" class="contact-btn contact-details"><i class="fab fa-linkedin"></i>
+                    LinkedIn</a>
+                <a href="https://twitter.com/btflblackchild" target="_blank" class="contact-btn contact-details"><i class="fab fa-twitter"></i>
+                    Twitter</a>
+                <a href="mailto:nzebenflorence@gmail.com" class="contact-btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+                <a href="tel:2348147124524" class="contact-btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
+            </div>
+        </section>
+
+        <section class="blog-page" id="blog">                  
+        </section>
+
+        <footer class="footer">
+            <nav>
+                <ul  class="footer-nav footer-links">  
+                    <li><a href="https://twitter.com/btflblackchild/" class="fa fa-twitter"></a></li>
+                    <li><a href="https://github.com/TheKachi/" class="fa fa-github"></a></li>
+                    <li><a href="https://www.linkedin.com/in/thekachi/" class="fa fa-linkedin"></a></li>
+            </ul>  
+            </nav>
+            <h3>Designed and Built by Kachi &copy; 2019.</h3>
+    
         </footer>
+    </main>
 
-</div> 
-        <script>
-        var slideIndex = 1;
+    <script>
+        let mainNav = document.getElementById("js-menu");
+        let navBarToggle = document.getElementById("js-navbar-toggle");   
+        navBarToggle.addEventListener("click", function() {
+            mainNav.classList.toggle("active");
+        });  
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- var slideIndex = 1;
             showSlides(slideIndex);
 
             function plusSlides(n) {
@@ -180,7 +194,42 @@
                 }
                 slides[slideIndex - 1].style.display = "block";
                 dots[slideIndex - 1].className += " active";
-            }
-        </script>
-    </body>
-</html>
+            } -->
+
+<!-- <div>
+                <h1><span>02. </span>Where I've Worked</h1> 
+                    <div>
+                        <h4>Intern <span style="color: rgb(100, 255, 218)">@ Hotels.Ng</span></h4>
+                        <h5>September 2019</h5>
+                        <ul>
+                            <li>Designed User Interfaces for client companies</li>
+                            <li>Worked in teams to develop code and host website pages from scratch</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Software Engineering Intern <span style="color: rgb(100, 255, 218)">@ CoralPay</span></h4>
+                        <h5>July-December 2018</h5>
+                        <ul>
+                            <li>Worked in a team of experienced fintech software developers to deliver payment solutions</li>
+                            <li>Worked with the network team to maintain and manage server operations</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Volunteer <span style="color: rgb(100, 255, 218)">@ Girls' Coding</span></h4>
+                        <h5>May-September 2017</h5>
+                        <ul>
+                            <li>Trained underprivileged young girls of ages 9-16 years on Scratch, HTML and CSS</li>
+                            <li>Hosted monthly seminars on Science, Technology, Engineering and Mathematics (S.T.E.M).</li>
+                            <li>Facilitated web design weekend and summer classes for underprivileged girls within ages 9-16 years</li>
+                        </ul>
+                    </div>
+                    <div>
+                    <h4>HTML facilitator <span style="color: rgb(100, 255, 218)">@ Kids That Code Nigeria</span></h4>
+                    <h5>July 2016-Present</h5>
+                    <ul>
+                        <li>Train children between the ages of 6-16 years on Scratch, Wordpress, HTML and CSS</li>
+                        <li>Facilitate paid summer classes on web designing for children within the ages of 6-16 years</li>
+                        <li>Volunteer at organization's boot camps</li>
+                    </ul>
+                    </div> 
+            </div> -->
