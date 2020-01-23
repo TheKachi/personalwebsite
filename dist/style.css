@@ -271,14 +271,14 @@ img {
 /* img {width: 100%;} */
 /* HERO STYLES */
 .hero{
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/me.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/me.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(img/me.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(img/me.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   background-size: cover;
   padding: 10em 0;
   /* position: absolute; */
-  /* text-align: right; */
+  /* text-align: center; */
 }
 
 .hero-text {
