@@ -10,7 +10,7 @@ body {
     font-weight: 900;
     color: #ffffff;
     font-family: 'Patrick Hand', cursive;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     min-height: 100vh;
     line-height: 1.2;
   }
@@ -18,20 +18,21 @@ body {
 h5 {
     color: #f8b31f;
     font-weight: 300;
-    font-size: 0.9em;
-    margin-bottom: .125rem;
+    font-size: 1em;
+    margin: .3rem;
     /* font-family: monospace; */
  
 }
 
 h1 {
     /* color: #F3E7E7; */
+    font-size: 3em;
 
 }
 
 h1, span {
     font-weight: 500;
-    font-size: 2em;
+    
     margin-bottom: 0.125rem;
     margin-top: 0; 
 }
@@ -39,24 +40,27 @@ h1, span {
 span {
     color: rgba(243, 231, 231, 0.5);
     display: block;
+    font-size: 2em;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  
+ 
 }
 
 li {
-  display: inline-block;
-  margin-top: 1em;
+ margin-top: 1em;
   margin-right: 1em;
 }
 
 .social img {
-    width: 1em;
-    /* margin-right: .25rem; */
+    width: 2em;
+    margin-top: 2em;
+    margin-right: .25rem
   }
 
-.home-text-box {
-  /* border: 1px solid #ffffff; */
-  /* box-shadow: 5px 5px 5px 5px#ffffff; */
-  /* padding: 1rem; */
-}
 
   .a {
     background-color: #f8b31f;
