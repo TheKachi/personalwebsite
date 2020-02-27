@@ -55,9 +55,9 @@ li {
   margin-right: 1em;
 }
 
-.social img {
-    width: 2em;
-    margin-top: 2em;
+.social {
+    width: 1rem;
+    /* margin-top: 3rem; */
     margin-right: .25rem
   }
 
