@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700'); */
-
+ /* font-family: monospace; */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -20,8 +20,6 @@ h5 {
     font-weight: 300;
     font-size: 1em;
     margin: .3rem;
-    /* font-family: monospace; */
- 
 }
 
 h1 {

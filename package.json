@@ -1,0 +1,22 @@
+{
+  "name": "thekachi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheKachi/personalwebsite.git"
+  },
+  "author": "Onyedikachi Nze-Ben",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheKachi/personalwebsite/issues"
+  },
+  "homepage": "https://github.com/TheKachi/personalwebsite#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

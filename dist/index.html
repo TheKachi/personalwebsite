@@ -10,36 +10,62 @@
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">   
-    <link rel="stylesheet" href="queries.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">  
+    <script src="https://kit.fontawesome.com/b5711e73a8.js" crossorigin="anonymous"></script>
 </head>
   
 <body>
-    <main class="container">
+    <header>
+        <div class="logo">
+            <p class="logo-text">thekachi</p>
+        </div>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
 
-        <div class="home-text-box">
-            <h5> Hi, my name is </h5>
-            <h1>Kachi.</h1>
-            <span> I'm a self-taught web developer based in Lagos, Nigeria currently looking for internship opportunities that will help me explore my creative sides.</span>    
-            <div class="buttons">
-                <a href="https://drive.google.com/open?id=1f0USaG9zptVDTVSkXjjfjH9fsWoPveIr" target= "_blank" class="btn a">Resume</a>
-                <a href="mailto:nzebenflorence@gmail.com" target= "_blank" class="btn b">Hire me!</a>
-            </div> 
-        </div> 
-
-        <div>
-    
-            <img src="img/IMG_1883-removebg-preview.png" alt="a picture of kachi" class="my-img">
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="my-portrait"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item current"><a href="index.html" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">PROJECTS</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT ME</a></li>
+                <li class="nav-item"><a href="resume.html" class="nav-link">RESUME</a></li>
+            </ul>       
+        </nav>
+    </header>
+       
+    <main id="home">
+        <!-- <div class="home-layout">
+            first grid item -->
+            <div class="hero-text">
+        
+                <h1 class="lg-heading">Onyedikachi Nze-Ben</h1>
+                <h2 class="sm-heading">Frontend Developer & UI Designer from Lagos, Nigeria</h2>
+                <div class=" btn hero-btn">
+                    <a href="mailto:nzebenflorence@gmail.com" target="_blank">Hire me!</a>          
+                </div>
+                   
+            </div>  
             
-            <ul>  
-                <li style="color: #f8b31f">Find me here >>> </li>
-                <li><a href="https://twitter.com/btflblackchild/" class="social"><img src="img/twitter.svg"></a></li>
-                <li><a href="https://github.com/TheKachi/" class="social"><img src="img/github.svg"></a></li>
-                <li><a href="https://www.linkedin.com/in/thekachi/" class="social"><img src="img/linkedin.svg"></a></li>
-            </ul>
-        </div>      
+                <div class="social-links">
+                    <a href="" class="fab fa-linkedin"></a>
+                    <a class="fab fa-github"></a>
+                    <a class="fab fa-twitter"></a>  
+                </div>
+            
+            
+            <!-- second grid item -->
+            <!-- <div class="my-picture"></div> -->
+            <!-- <img src="img/me.png" alt="me" class="my-img">
+        </div>      -->
     </main>
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,74 @@
+// Wide screens
+@include mediaXl {
+}
+
+// Desktops and Laptops
+@include mediaLg {
+}
+
+// Tablets and small laptops-
+// my picture should still be side by side
+@include mediaMd {
+  main {
+    .lg-heading {
+      font-size: 3rem;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+    .sm-heading {
+      font-size: 1.75rem;
+    }
+  }
+
+  ul.menu-nav {
+    float: right;
+    width: 50%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  // .home-layout {
+  //   grid-template-areas: "";
+  // }
+
+  // .project-container {
+  // }
+}
+
+// Smartphones
+@include mediaSm {
+  h1 {
+    margin-top: 20vh;
+    color: black;
+  }
+
+  main {
+    padding: 4rem 1.25rem;
+
+    h1.lg-heading {
+      font-size: 1.75rem;
+    }
+
+    h2.sm-heading {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .hero-btn a {
+      font-size: 1rem;
+    }
+  }
+
+  ul.menu-nav {
+    float: none;
+    width: 100%;
+  }
+}
