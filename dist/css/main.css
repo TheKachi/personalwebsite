@@ -1,23 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
 .logo {
-  position: absolute;
-  z-index: 3;
-  left: 100px;
-  top: 35px;
-  cursor: pointer;
-  transition: all 0.5s ease-out; }
+  z-index: 3; }
   .logo-text {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #f2e74b;
     font-family: "Indie Flower";
     letter-spacing: 3px;
     font-weight: 600; }
+  .logo span {
+    color: #8892b0; }
 
 .menu-btn {
-  position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
   .menu-btn .btn-line {
@@ -91,11 +85,8 @@
 * {
   box-sizing: border-box; }
 
-html {
-  font-size: 20px; }
-
 body {
-  background: #010440;
+  background-image: linear-gradient(90deg, #000000 0%, #191970 100%);
   color: #fff;
   height: 100%;
   margin: 0;
@@ -122,7 +113,7 @@ h3 {
     font-size: 2rem; }
 
 a {
-  color: #fff;
+  color: #8892b0;
   text-decoration: none; }
   a:hover {
     color: #f2e74b;
@@ -133,6 +124,9 @@ li {
 
 header {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
   z-index: 2;
   width: 100%; }
 
@@ -144,6 +138,7 @@ main {
   main .social-links {
     margin-top: 2rem; }
     main .social-links a {
+      color: #fff;
       padding: 0.4rem; }
   main .hero-btn a {
     padding: 1rem 1.5rem;
@@ -151,14 +146,22 @@ main {
     font-size: 1.5rem;
     color: #f2e74b;
     border: 1px solid; }
+  main .hero-btn .resume-btn a {
+    color: black; }
+  main .hero-btn .hire-me-btn {
+    background-color: #f2e74b;
+    color: #010440;
+    margin-left: 2rem;
+    font-weight: 600; }
   main#home {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
-  main .my-picture {
-    width: 100%;
-    height: 70vh;
-    background: url("../img/me.png"); }
+
+.my-picture {
+  width: 100%;
+  height: 70vh;
+  background: url("../img/me.png"); }
 
 .hero-text {
   display: flex;
@@ -207,6 +210,8 @@ main {
   h1 {
     margin-top: 20vh;
     color: black; }
+  header {
+    padding: 2rem 1.25rem; }
   main {
     padding: 4rem 1.25rem; }
     main h1.lg-heading {

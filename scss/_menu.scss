@@ -1,25 +1,26 @@
 // Menu button
 .logo {
-  position: absolute;
+
   z-index: 3;
-  left: 100px;
-  top: 35px;
-  cursor: pointer;
-  @include easeOut;
+
 
   &-text {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: $secondarycolor;
     font-family: "Indie Flower";
     letter-spacing: 3px;
     font-weight: 600;
   }
+
+  span {
+    color: $primarycolor;
+  }
 }
 .menu-btn {
-  position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
+  // position: absolute;
+  // right: 35px;
+  // top: 35px;
   cursor: pointer;
   @include easeOut;
 
