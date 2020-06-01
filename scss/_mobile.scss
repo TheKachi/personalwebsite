@@ -18,6 +18,23 @@
     .sm-heading {
       font-size: 1.75rem;
     }
+    &#home {
+      display: block;
+
+      .my-picture-container {
+        margin-top: 3rem;
+        width: 70vw;
+        margin: auto;
+      
+        img {
+          opacity: 0.5;
+        }
+      }
+
+      .first-box {
+        height: 70vh;
+      }
+    }
   }
 
   ul.menu-nav {
@@ -48,7 +65,6 @@
 @include mediaSm {
   h1 {
     margin-top: 20vh;
-    color: black;
   }
 
   header {

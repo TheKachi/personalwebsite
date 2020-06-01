@@ -6,15 +6,11 @@
   box-sizing: border-box;
 }
 
-// html {
-//   font-size: 20px;
-// }
-
 body {
   // @include background();
   //   background: $primarycolor;
   background-image: linear-gradient(90deg, #000000 0%, #191970 100%);
-   color: set-text-color($backgroundcolor);
+  color: set-text-color($backgroundcolor);
   height: 100%;
   margin: 0;
   padding: 0;
@@ -37,12 +33,9 @@ h3 {
   }
 
   &.sm-heading {
-    // margin-top: 2rem;
-    // padding: 0.2rem 1rem;
-    // background: rgba(lighten($primarycolor, 2), 0.5);
     font-weight: 100;
     color: $primarycolor;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -71,34 +64,24 @@ header {
 
 main {
   padding: 4rem;
-  //height: 100%;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 80px);
 
   .btn {
     margin-top: 80px;
   }
 
-  .social-links {
-    margin-top: 2rem;
-
-    a {
-      color: #fff;
-      padding: 0.4rem;
-    }
-  }
-
   .hero-btn {
     a {
       padding: 1rem 1.5rem;
-      
       font-weight: 100;
       font-size: 1.5rem;
       color: $secondarycolor;
       border: 1px solid;
     }
 
-    .resume-btn a {
-      color: black;
+    .resume-btn:hover {
+      background-color: $primarycolor;
+      font-weight: 200;
     }
 
     .hire-me-btn {
@@ -106,57 +89,74 @@ main {
       color: $backgroundcolor;
       margin-left: 2rem;
       font-weight: 600;
+
+      &:hover {
+        color: $primarycolor;
+        background-color: $backgroundcolor;
+      }
     }
   }
   &#home {
-  overflow: hidden; //no scroll bars
-  h1 {
-    margin-top: 20vh;
+    overflow: hidden; //no scroll bars
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      margin-top: 15vh;
+    }
   }
 }
-}
 
-
-
-.my-picture {
+.my-picture-container {
   // border-radius: 50%;
-  width: 100%;
-  height: 70vh;
-  background: url("../img/me.png");
-  // border: 3px solid $secondarycolor;
+  border: 1px solid $secondarycolor;
+  align-self: flex-end;
+  // height: 300px;
+  // width: 300px;
+  // background: black;
+  // overflow: hidden;
+  // background: #c33764; /* fallback colour. Make sure this is just one solid colour. */
+  // background: -webkit-linear-gradient(
+  //     rgba(29, 38, 113, 0.8),
+  //     rgba(195, 55, 100, 0.8)
+  //   ),
+  //   url("../img/me-2.jpg");
+  // background: linear-gradient(rgba(29, 38, 113, 0.9), rgba(195, 55, 100, 0.8)),
+  //   url("../img/me-2.jpg");
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    // background: rgba(39, 62, 84, 0.82);
+    // overflow: hidden;
+    // height: 100%;
+    // z-index: 2;
+
+    &:hover {
+      opacity: 1;
+      @include easeOut();
+    }
+  }
+
+  // height: 70vh;
+  // background: url("../img/me.png");
+  
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
 }
-
-// .home-layout {
-//   display: grid;
-//   grid-template-areas:
-//     "hero-text hero-text ."
-//     "hero-text hero-text ."
-//     "hero-text hero-text  my-img";
-//   grid-template-columns: repeat(3, 1fr);
-//   grid-column-gap: 30px;
-
-//   .hero-text {
-//     grid-area: hero-text;
-//   }
-
-//   .my-img {
-//     margin-top: 10vh;
-//     grid-area: my-img;
-//     border-radius: 50%;
-//     margin: auto;
-//     border: 1px solid $secondarycolor;
-//   }
-// }
-
 .project-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
+
+  img {
+    width: 100%;
+    border: 3px white solid;
+  }
 
   .project-card {
     background-color: #fff;
@@ -178,10 +178,16 @@ main {
 }
 
 #main-footer {
-  height: 60px;
+  height: 80px;
   text-align: center;
-  background-color: darken($backgroundcolor, 5);
-  padding: 25px;
+  background-color: darken($backgroundcolor, 10);
+  padding: 10px;
+  font-size: 14px;
+
+  .social-links a {
+    // margin: 2rem;
+    padding: 0 0 1rem 1rem;
+  }
 }
 
 @import "mobile";
