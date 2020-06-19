@@ -4,6 +4,16 @@
 
 // Desktops and Laptops
 @include mediaLg {
+  main {
+    .lg-heading {
+      font-size: 20px;
+    }
+    &#home {
+      .first-box {
+        max-width: 400px;
+      }
+    }
+  }
 }
 
 // Tablets and small laptops-
@@ -37,29 +47,6 @@
     }
   }
 }
-
-ul.menu-nav {
-  float: right;
-  width: 50%;
-  min-height: 0;
-
-  &.show {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.menu-nav {
-  height: 75vh;
-  transform: translate3d(-100%, 0, 0);
-  font-size: 24px;
-}
-
-// .home-layout {
-//   grid-template-areas: "";
-// }
-
-// .project-container {
-// }
 
 // Smartphones
 @include mediaSm {

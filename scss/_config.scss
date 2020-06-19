@@ -6,7 +6,7 @@ $primarycolor: #8892b0;
 
 $show-home-image: true;
 
-$show-image: url(img/me.png);
+$show-image: url(img/me-2.jpg);
 
 $background-opacity: 0.9;
 
@@ -35,26 +35,26 @@ $background-opacity: 0.9;
 //   }
 // }
 
-@mixin background {
-  @if $show-home-image {
-    &#bg-img {
-      background: $show-image;
-      background-attachment: fixed;
-      background-size: cover;
+// @mixin background {
+//   @if $show-home-image {
+//     &#bg-img {
+//       background: $show-image;
+//       background-attachment: fixed;
+//       background-size: cover;
 
-      &:after {
-        content: "";
-        position: absolute; //covers the whole body
-        top: 0;
-        right: 0;
-        width: 100%;
-        z-index: -1;
-        height: 100%;
-        background: rgba($primarycolor, $background-opacity);
-      }
-    }
-  }
-}
+//       &:after {
+//         content: "";
+//         position: absolute; //covers the whole body
+//         top: 0;
+//         right: 0;
+//         width: 100%;
+//         z-index: -1;
+//         height: 100%;
+//         background: rgba($primarycolor, $background-opacity);
+//       }
+//     }
+//   }
+// }
 
 // Set text color
 @function set-text-color($color) {

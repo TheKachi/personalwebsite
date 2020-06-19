@@ -115,7 +115,7 @@ main {
   -moz-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.75);
   // align-self: flex-end;
   height: 300px;
-  width: 300px;
+  max-width: 300px;
   filter: grayscale(97%);
   -webkit-filter: grayscale(97%);
   -moz-filter: grayscale(97%);

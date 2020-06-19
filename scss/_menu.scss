@@ -115,6 +115,23 @@
   }
 }
 
+
+ul.menu-nav {
+  float: right;
+  width: 50%;
+  min-height: 0;
+
+  &.show {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.menu-nav {
+  height: 75vh;
+  transform: translate3d(-100%, 0, 0);
+  font-size: 24px;
+}
+
 // Delay each nav item slide in by 0.1s
 @for $x from 1 through 5 {
   .nav-item:nth-child(#{$x}) {
