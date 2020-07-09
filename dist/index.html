@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,12 @@
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">  
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/b5711e73a8.js" crossorigin="anonymous"></script>
 </head>
- 
+
 
 <!--The goal for now is to write this in React and gatsby from vanilla js
 - continue with sass, watch yt to write it better 
@@ -29,14 +31,14 @@
     <header>
         <!-- get logo online e.g canva -->
         <div class="logo">
-            <p class="logo-text">the<span>K</span>achi</p>
+            <p class="logo-text">the<span style="color: yellow;">K</span>achi</p>
         </div>
 
         <!--for tablets and phones-->
         <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
+            <div class="btn-line" style="color: yellow;"></div>
+            <div class="btn-line" style="color: yellow;"></div>
+            <div class="btn-line" style="color: yellow;"></div>
         </div>
 
         <nav class="menu">
@@ -47,44 +49,114 @@
             <ul class="menu-nav">
                 <li class="nav-item current"><a href="index.html" class="nav-link">HOME</a></li>
                 <!-- <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li> -->
-                <li class="nav-item"><a href="https://github.com/TheKachi" class="nav-link">PROJECTS</a></li>
-                <li class="nav-item"><a href="mailto:nzebenflorence@gmail.com" class="nav-link">CONTACT ME</a></li>
-                <li class="nav-item"><a href="https://drive.google.com/file/d/1Ham6RD8br2MvHwfysUhupfVSffvj_oXY/view?usp=sharing" class="nav-link btn">RESUME</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">CONTACT ME</a></li>
+                <li class="nav-item"><a
+                        href="https://drive.google.com/file/d/1EAgJEo_6sqT_XnRCmQ40waXSTWdk46TI/view?usp=sharing"
+                        class="nav-link btn">RESUME</a></li>
                 <!-- <li class="nav-item"><a href="https://notion.com/TheKachi" class="nav-link">BLOG</a></li> -->
-            </ul>       
+            </ul>
         </nav>
     </header>
-       
-    <main id="home">
-        <!-- <div class="home-layout">
-            first grid item -->
+
+    <main>
+        <section class="home-container">
+            <!-- first grid item -->
             <div class="first-box">
                 <div class="hero-text">
-            
+
                     <h1 class="lg-heading">Onyedikachi Nze-Ben</h1>
                     <h2 class="sm-heading">Frontend Developer from Lagos, Nigeria</h2>
                     <div class="btn hero-btn">
-                        <a href="https://drive.google.com/file/d/1Ham6RD8br2MvHwfysUhupfVSffvj_oXY/view?usp=sharing" target="_blank" class="resume-btn">Resume</a> 
-                        <a href="mailto:nzebenflorence@gmail.com" target="_blank" class="hire-me-btn">Hire me!</a>         
-                    </div>                     
-                </div>  
+                        <a href="https://drive.google.com/file/d/1EAgJEo_6sqT_XnRCmQ40waXSTWdk46TI/view?usp=sharing"
+                            target="_blank" class="resume-btn">Resume</a>
+                        <a href="mailto:nzebenflorence@gmail.com" target="_blank" class="hire-me-btn">Hire me!</a>
+                    </div>
+                </div>
             </div>
-       
-            
-            
+
             <!-- second grid item -->
             <div class="my-picture-container">
                 <!-- <img src="img/me-2.jpg" alt="me"> -->
             </div>
+        </section>
+        <!-- <section>
+            <h2 style="text-align: center;">What I've Worked On</h2>
+            <p>Here's some selected projects I've worked on</p>
+        </section> -->
+        <!-- <section id="projects" class="project-container">
+
+
+            <input type="radio" name="position" checked />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <div id="carousel" class="projects">
+
+                <div class="card">
+
+                    <h2>Personal Website v1</h2>
+                    <h3>First iteration of my personal website</h3>
+                    <ul>
+                        <li>SCSS</li>
+                        <li>JS</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>RecogNice</h2>
+                    <h3>Facial Recognition App</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Node.Js</li>
+                        <li>PostGreSQL</li>
+                        <li>API</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Pharmcare</h2>
+                    <h3>Landing page for an online pharmacy</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Portfolio</h2>
+                    <h3>Template for a portfolio website</h3>
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>Node.Js</li>
+                        <li>PostGreSQL</li>
+                    </ul>
+                </div>
+                <div class="card">
+                <h2>Captain Marvel</h2>
+                <h3>A clone of the captain marvel homepage using marvel APIs</h3>
+                <ul>
+                    <li>Vue</li>
+                    <li>Node.Js</li>
+                    <li>PostGreSQL</li>                   
+                </ul>
+            </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-page">
+            <h2>I can help</h2>
+            <h3>I'm currently looking for my first full time role.</h3>
+            <p>Need me on your team or just fancy saying hi, then get in touch.</p>
+            <button>Email me</button>
+        </section> -->
     </main>
 
     <footer id="main-footer">
         <div class="social-links">
             <a href="https://linkedin.com/in/thekachi" class="fab fa-linkedin fa-2x"></a>
             <a href="https://github.com/Thekachi" class="fab fa-github fa-2x"></a>
-            <a href="https://twitter.com/thekachii" class="fab fa-twitter fa-2x"></a>  
+            <a href="https://twitter.com/thekachii" class="fab fa-twitter fa-2x"></a>
         </div>
-      </footer>
+    </footer>
     <script src="main.js"></script>
 </body>
 

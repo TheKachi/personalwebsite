@@ -1,14 +1,12 @@
 // Menu button
 .logo {
-
   z-index: 3;
-
 
   &-text {
     font-size: 1rem;
     color: $secondarycolor;
     font-family: "Indie Flower";
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     font-weight: 600;
   }
 
@@ -28,7 +26,8 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: set-icon-color($backgroundcolor);
+    color: yellow;
+    // background: set-icon-color($backgroundcolor);
     @include easeOut;
   }
 

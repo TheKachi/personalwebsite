@@ -1,6 +1,8 @@
-$backgroundcolor: #010440;
+// $backgroundcolor: #010440;
+$backgroundcolor: #000;
 
-$secondarycolor: rgb(242, 231, 75);
+// $secondarycolor: rgb(242, 231, 75);
+$secondarycolor: #fff;
 
 $primarycolor: #8892b0;
 
@@ -65,13 +67,13 @@ $background-opacity: 0.9;
   }
 }
 
-@function set-icon-color($color) {
-  @if (lightness($color) > 40) {
-    @return $backgroundcolor;
-  } @else {
-    @return $secondarycolor;
-  }
-}
+// @function set-icon-color($color) {
+//   @if (lightness($color) > 40) {
+//     @return $backgroundcolor;
+//   } @else {
+//     @return $secondarycolor;
+//   }
+// }
 
 // Media Query Mixins
 // smartphones
