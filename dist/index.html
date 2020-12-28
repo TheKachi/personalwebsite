@@ -13,19 +13,10 @@
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/b5711e73a8.js" crossorigin="anonymous"></script>
 </head>
-
-
-<!--The goal for now is to write this in React and gatsby from vanilla js
-- continue with sass, watch yt to write it better 
-- have a blog, watch yt to learn gatsby 
-- have projects to show, learn react by working on recognice 
-- add a few figma designs- bio says fe dev, ui designer
-- watch youtube to learn gatsby
-- etc
--->
 
 <body>
     <header>
@@ -52,8 +43,8 @@
                 <li class="nav-item"><a href="https://github.com/TheKachi" class="nav-link">PROJECTS</a></li>
                 <li class="nav-item"><a href="mailto:nzebenflorence@gmail.com" class="nav-link">CONTACT ME</a></li>
                 <li class="nav-item"><a
-                        href="https://drive.google.com/file/d/11BbQzOcJ7PbnS0J-MaKZ_RAIbASg6221/view?usp=sharing"
-                        class="nav-link btn">RESUME</a></li>
+                        href="https://drive.google.com/file/d/1plstNWPMUmlIfjw0b0kKyqWHl-PntJo-/view?usp=sharing"
+                        class="nav-link btn" target="_blank">RESUME</a></li>
                 <!-- <li class="nav-item"><a href="https://notion.com/TheKachi" class="nav-link">BLOG</a></li> -->
             </ul>
         </nav>
@@ -65,10 +56,10 @@
             <div class="first-box">
                 <div class="hero-text">
 
-                    <h1 class="lg-heading">Onyedikachi Nze-Ben</h1>
-                    <h2 class="sm-heading">Frontend Developer from Lagos, Nigeria</h2>
-                    <div class="btn hero-btn">
-                        <a href="https://drive.google.com/file/d/11BbQzOcJ7PbnS0J-MaKZ_RAIbASg6221/view?usp=sharing"
+                    <h1 class="lg-heading" data-aos="fade-right">Onyedikachi Nze-Ben</h1>
+                    <h2 class="sm-heading" data-aos="fade-left">Frontend Developer from Lagos, Nigeria</h2>
+                    <div class="btn hero-btn" data-aos="fade-up">
+                        <a href="https://drive.google.com/file/d/1plstNWPMUmlIfjw0b0kKyqWHl-PntJo-/view?usp=sharing"
                             target="_blank" class="resume-btn">Resume</a>
                         <a href="mailto:nzebenflorence@gmail.com" target="_blank" class="hire-me-btn">Hire me!</a>
                     </div>
@@ -76,7 +67,7 @@
             </div>
 
             <!-- second grid item -->
-            <div class="my-picture-container">
+            <div class="my-picture-container" data-aos="fade-down">
                 <!-- <img src="img/me-2.jpg" alt="me"> -->
             </div>
         </section>
@@ -158,6 +149,12 @@
         </div>
     </footer>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
 </body>
 
 </html>
