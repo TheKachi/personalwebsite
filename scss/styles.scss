@@ -1,0 +1,119 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Segoe UI";
+	margin: 0;
+	padding: 0;
+   overflow-x: hidden;
+}
+
+main {
+	min-height: calc(100% - 50px);
+	background-color: $background-color;
+}
+
+// Headings
+.lg-heading {
+	font-weight: 600;
+	color: $white;
+	margin-top: 10vh;
+	font-size: 3rem;
+	// color: set-icon-color($backgroundcolor);
+}
+.sm-heading {
+	font-weight: 100;
+	color: $primarycolor;
+}
+
+h2.heading {
+	font-size: 1.25rem;
+}
+
+@media (min-width: 992px) {
+	.lg-heading {
+		font-size: 5rem;
+		margin-top: 20vh;
+	}
+}
+
+// Buttons
+.btn {
+	border-radius: 0;
+	&-primary {
+		background: $white;
+		color: $background-color;
+		border: 1px solid $white;
+		&:hover {
+			background-color: $background-color;
+			border: 1px solid $white;
+		}
+	}
+	&-outline-secondary {
+		color: $white;
+	}
+}
+
+// Nav
+nav {
+	background: $background-color;
+	a {
+		color: $white;
+		&:hover {
+			color: $primarycolor;
+		}
+	}
+}
+
+// Hero
+.hero {
+	background-color: $background-color;
+}
+
+// About
+.about {
+	background: $grey;
+	padding: 10% 0;
+	a {
+		color: $background-color;
+	}
+	p {
+		font-size: 1.75rem;
+		&.sub-text {
+			font-size: 1rem;
+		}
+	}
+
+	li {
+		padding-left: 0;
+		list-style-type: circle;
+		font-weight: 100;
+		line-height: 1.8;
+	}
+}
+
+// PROJECTS
+.projects {
+	background-color: $grey;
+	li {
+		list-style-type: none;
+	}
+}
+.card {
+	&-body {
+		color: $background-color;
+	}
+}
+
+// CONTACT
+.contact {
+	background-color: $grey;
+}
+
+// FOOTER
+.footer {
+	background-color: $white;
+	height: 50px;
+	border-top: 0.5px solid $grey;
+}

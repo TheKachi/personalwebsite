@@ -1,10 +1,10 @@
 {
   "name": "thekachi",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portfolio",
   "main": "index.js",
   "scripts": {
-    "node-sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "scss": "node-sass --watch scss -o dist/css"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/TheKachi/personalwebsite#readme",
   "dependencies": {
-    "node-sass": "^4.14.1"
+    "aos": "^3.0.0-beta.6",
+    "node-sass": "5.0.0"
   }
 }
