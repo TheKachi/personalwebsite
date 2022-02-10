@@ -18,6 +18,6 @@
   "homepage": "https://github.com/TheKachi/personalwebsite#readme",
   "dependencies": {
     "aos": "^3.0.0-beta.6",
-    "node-sass": "5.0.0"
+    "node-sass": "7.0.0"
   }
 }
